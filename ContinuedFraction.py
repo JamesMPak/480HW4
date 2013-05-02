@@ -5,5 +5,20 @@ a;
 a.convergents()
   [0, 1/7, 4/29, 5/36, 19/137, 100/721, 2019/14557, 2119/15278, 4138/29835, 6257/45113, 16652/120061, 56213/405296, 72865/525357, 129078/930653, 1105489/7970581, 1234567/8901234]
 
-#Find the convergent with 7 digits in both numerator and denominator
-#alpha = 1234567/8901234
+"""
+Find the convergent with 7 digits in both numerator and denominator
+alpha = 1105489/7970581 or 1234567/8901234
+We must test both with the condition that alpha == 372806624339965%(37+10^15)
+
+If alpha = 1105489/7970581
+1105489/7970581 == 372806624339965%(37+10^15)
+1105489 == 7970581 * 372806624339965%(37+10^15)
+SAGE returns FALSE
+Therefore, alpha =/= 1105489/7970581
+
+If alpha = 1234567/8901234
+1234567/8901234 == 372806624339965%(37+10^15)
+1234567 == 8901234 * 372806624339965%(37+10^15)
+SAGE return TRUE
+Therefore alpha = 1234567/8901234
+"""
